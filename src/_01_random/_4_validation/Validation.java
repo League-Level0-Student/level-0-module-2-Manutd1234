@@ -9,9 +9,10 @@ import javax.swing.JOptionPane;
 
 public class Validation {
 	public static void main(String[] args) {
-		while(true) {
-		for(int i = 0; i<10;i++) {
+		
 		Random randomMaker = new Random();
+		for(int i = 0; i<10;i++) {
+	
 		
 		int randomNumber = randomMaker.nextInt(5);
 		
@@ -31,7 +32,7 @@ public class Validation {
 		if(randomNumber == 3) {
 			JOptionPane.showMessageDialog(null,"You smell like an expo marker");
 		}
-		if(randomNumber == 0) {
+		if(randomNumber == 4) {
 			JOptionPane.showMessageDialog(null,"You voted for frank");
 		}
 		
@@ -40,5 +41,4 @@ public class Validation {
 		// 3. Find someone to test out your program. They will like it :)
 	}
 		}
-}
 }
