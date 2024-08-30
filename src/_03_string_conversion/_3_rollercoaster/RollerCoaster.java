@@ -17,11 +17,15 @@ public class RollerCoaster {
 	int heightAsInt = Integer.parseInt(heightToRide);
 		// 4) If the heightAsInt is greater than or equal to 48 inches tall print:
 	    // "Hurray! You are tall enough to ride the coaster alone!" Hint: use JoptionPane
-	if(heightToInt > 42) { }
+	if(heightAsInt > 42) { }
 	JOptionPane.showMessageDialog(null,"Hurray! You are tall enough to ride the coaster alone!");
 		// 5) Else if the heightAsInt is greater than or equal to 42 inches tall print:
 		// "You can ride the coaster with someone else!" 
-	
+	if (heightAsInt>=42){
+		JOptionPane.showMessageDialog(null, "You can ride the coaster with someone else");
+	}else {
+		JOptionPane.showMessageDialog(null, "You must be at least 42 inches to ride the roller coaster pal!");
+	}
 		// 6) else print: "You must be at least 42 inches tall to ride the roller coaster pal!"
 } 
 }
